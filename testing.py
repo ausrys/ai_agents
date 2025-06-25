@@ -124,11 +124,6 @@ Artificial intelligence (AI) refers to the simulation of human intelligence in m
 Here's a more detailed explanation:
 What AI does: AI systems are designed to perform tasks that typically require human intelligence. This can involve: 
 Learning: Adapting to new information and improving performance over time.
-Reasoning: Drawing conclusions and making logical inferences.
-Problem-solving: Finding solutions to complex challenges.
-Decision-making: Choosing the best course of action based on available data.
-Perception: Enabling machines to "see" and understand the world around them.
-Language understanding: Interpreting and responding to human language.
 """
 
 result_summary = graph.invoke(
