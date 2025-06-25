@@ -3,7 +3,6 @@ from typing import TypedDict
 from transformers import pipeline
 from diffusers import StableDiffusionPipeline
 import torch
-from PIL import Image
 from newspaper import Article
 # --- 1. Define state ---
 

@@ -66,7 +66,30 @@ graph.invoke({"input": "Draw a cat on the moon", "output": ""})
 graph.invoke({"input": "Summarize this: <long paragraph>", "output": ""})
 graph.invoke({"input": "https://en.wikipedia.org/wiki/Python_(programming_language)", "output": ""})
 ```
+## 🧾 Table Extraction Agent (OCR + HTML)
 
+
+This agent extracts tables from either Wikipedia URLs or image files (JPEG/PNG) and saves them as .csv or .xlsx files, based on user input.
+
+✅ Supported Inputs:
+Wikipedia URLs containing HTML tables
+
+Image files (screenshots of tables) using OCR
+
+🧠 How It Works:
+If the input is a URL:
+
+Uses pandas.read_html() to extract all HTML tables from the page.
+
+Saves each table to a separate file (e.g., table_0.csv, table_1.csv).
+
+If the input is an image path:
+
+Uses PaddleOCR to detect and recognize table text.
+
+Constructs a rough table by splitting text into rows/columns.
+
+Saves it as ocr_table.csv or ocr_table.xlsx.
 
 ## 🧠 Credits
 
